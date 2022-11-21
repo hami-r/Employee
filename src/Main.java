@@ -21,6 +21,7 @@ public class Main {
                 case 1:
                     Employee employee = new Employee();
                     employeeList.add(employee);
+                    System.out.println("Employee ADDED!");
                     break;
             }
         }
