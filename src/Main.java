@@ -50,6 +50,26 @@ public class Main {
                     else {
                         System.out.println("Employee not found");
                     }
+                    break;
+                case 4:
+                    System.out.println("Enter the employee ID to be deleted");
+                    id = scanner.nextInt();
+                    for(int i = 0; i < employeeList.size(); i++) {
+                        if(employeeList.get(i).employeeId == id) {
+                            employeeList.remove(i);
+                            System.out.println("Employee is deleted!\n" +
+                                    "Current number of employees = " + employeeList.size());
+                            break;
+                        }
+                    }
+                    break;
+                case 5:
+                    System.out.println("Exiting");
+                    isContinue = false;
+                    break;
+                default:
+                    System.out.println("Enter a valid option!");
+                    break;
             }
         }
     }
