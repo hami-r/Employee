@@ -25,12 +25,31 @@ public class Main {
                     System.out.println("Employees ADDED = " + employeeList.size());
                     break;
                 case 2:
-                    System.out.println(employeeList.size());
+                    System.out.println("Number of Employees: " + employeeList.size());
                     for (int i = 0; i < employeeList.size(); i++) {
-                        System.out.println(i + ")");
+                        System.out.println((i+1) + ")");
                         employeeList.get(i).display();
                     }
                     break;
+                case 3:
+                    System.out.println("Enter the employee id:");
+                    int id = scanner.nextInt();
+                    boolean isFound = false;
+                    int found = 0;
+                    for(int i = 0; i < employeeList.size(); i++) {
+                        if(employeeList.get(i).employeeId == id) {
+                            isFound = true;
+                            found = i;
+                            break;
+                        }
+                    }
+                    if(isFound){
+                        System.out.println("Employee founded!!");
+                        employeeList.get(found).display();
+                    }
+                    else {
+                        System.out.println("Employee not found");
+                    }
             }
         }
     }

@@ -37,7 +37,7 @@ public class Employee {
                 "Salary: " + salary + "\n" +
                 "Company Name: " + companyName + "\n" +
                 "Phone Number: " + phoneNumber + "\n" +
-                "Email: " + email);
+                "Email: " + email + "\n");
     }
 
     public static void main(String[] args) {
