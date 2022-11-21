@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -15,8 +16,13 @@ public class Main {
 
             Scanner scanner = new Scanner(System.in);
             int choice = scanner.nextInt();
+            ArrayList<Employee> employeeList = new ArrayList<>(5);
             switch (choice) {
-
+                case 1:
+                    Employee employee = new Employee();
+                    employeeList.add(employee);
+                    System.out.println("Employee ADDED!");
+                    break;
             }
         }
     }
